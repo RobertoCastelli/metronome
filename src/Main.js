@@ -11,9 +11,10 @@ function Main() {
 
     const handleRange = e => setRange(e.target.value)
 
+    // DANY IL PROBLEMA È IN QUESTA FUNZIONE
     const handleTempo = e => {
-        if (playingState) {
-            clearInterval(metronome)
+        if (playingState) { 
+            clearInterval(metronome) // NON SI FERMA IL METRONOMO QUANDO 'PLAYINGSTATE' MUTA STATO
             setPlayingState(false)
         } else {
             e.preventDefault()
