@@ -1,8 +1,13 @@
 body {
   font-family: monospace;
+  color: bisque;
   max-width: 350px;
   margin: auto;
   text-align: center;
+  background-image: url('img/metro.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+
 }
 
 span {
@@ -20,11 +25,32 @@ button {
 }
 
 .slider {
+  -webkit-appearance: none;
   opacity: 0.7;
-  width: 100%;
   transition: opacity 0.2s;
+  width: 80%;
+  height: 10px;
+  background: bisque ;
+  border-radius: 5px;
+  outline: none;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%; 
+  background: #61DAE2 ;
+  cursor: pointer;
 }
 
 .slider:hover {
   opacity: 1;
+}
+
+.footer, 
+.header,
+.range-value {
+  padding: 30px 0;
 }

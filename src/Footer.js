@@ -2,7 +2,7 @@ import React from 'react'
 
 function Footer() {
     return (
-        <p>copyright &copy; 2019 Roberto Castelli www.robertocastelli.dev</p>
+        <p className="footer">copyright &copy; 2019 Roberto Castelli www.robertocastelli.dev</p>
     )
 }
 
